@@ -11,7 +11,7 @@ we can write the recussion equation as,
 where 
 <p align="center"><img src="/DEQ/RKM/tex/0afe3f5efbf90cb9a77d2b669fbc5f55.svg?invert_in_darkmode&sanitize=true" align=middle width=97.68075735pt height=16.438356pt/></p> 
 <p align="center"><img src="/DEQ/RKM/tex/05cf2f150ee29d1b49b11fddd1410ce2.svg?invert_in_darkmode&sanitize=true" align=middle width=215.11411019999997pt height=16.438356pt/></p>
-and <img src="/DEQ/RKM/tex/2ad9d098b937e46f9f58968551adac57.svg?invert_in_darkmode&sanitize=true" align=middle width=9.47111549999999pt height=22.831056599999986pt/> is the step size or small interval defined as,
+and h is the step size or small interval defined as,
 <p align="center"><img src="/DEQ/RKM/tex/3b5d068f9cbd98226faf7e1c9a02318e.svg?invert_in_darkmode&sanitize=true" align=middle width=217.1358354pt height=17.74618065pt/></p>
 
 #### Example
