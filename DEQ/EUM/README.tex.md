@@ -48,8 +48,7 @@ $$
 
 ![Solution for step size h = 0.01](euler2.png)
 
+![Comparision of analytical solution and solutions obtained by Euler's method](euler_comparision.png)
+
 
 **Note**: The graphical representation of solutions obtained using Euler's method have been restricted to the interval $[0,1]$
-
-
-![Comparision of analytical solution and solutions obtained by Euler's method](euler_comparision.png)
