@@ -7,7 +7,7 @@ $$
 \frac{dy}{dx} = f(x,y) \ ; \qquad y(x=x_0) = y_0 \\
 $$
 
-we can write the recussion equation as,
+we can write the recursion equation as,
 $$
 y_{i+1} = y_i + h f(x_i, y_i)
 $$

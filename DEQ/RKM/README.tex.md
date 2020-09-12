@@ -8,7 +8,7 @@ $$
 \frac{dy}{dx} = f(x,y) \ ; \qquad y(x=x_0) = y_0 \\
 $$
 
-we can write the recussion equation as,
+we can write the recursion equation as,
 $$
 y_{i+1} = y_i + \frac{h}{2} (S_1 + S_2)
 $$
@@ -36,9 +36,9 @@ $$
 
 ![Analytical Solution](analytical.png)
 
-![Solution for step size h = 0.1 and anlytical solution](rkm21.png)
+![Solution for step size h = 0.1 and analytical solution](rkm21.png)
 
-![Solution for step size h = 0.01 and anlytical solution](rkm22.png)
+![Solution for step size h = 0.01 and analytical solution](rkm22.png)
 
 ![Comparision of solution for different values of h](rkm2_comparision.png)
 
@@ -57,7 +57,7 @@ $$
 \frac{dy}{dx} = f(x,y) \ ; \qquad y(x=x_0) = y_0 
 $$
 
-we can write the recussion equation as,
+we can write the recursion equation as,
 $$
 y_{i+1} = y_i + \frac{h}{6} (S_1 + 2 S_2 + 2 S_3 + S4)
 $$
@@ -81,9 +81,9 @@ $$
 #### Example 
 For the same example above, using RK4M we obtain,
 
-![Solution for step size h = 0.1 and anlytical solution](rkm41.png)
+![Solution for step size h = 0.1 and analytical solution](rkm41.png)
 
-![Solution for step size h = 0.01 and anlytical solution](rkm42.png)
+![Solution for step size h = 0.01 and analytical solution](rkm42.png)
 
 ![Comparision of solution for different values of h](rkm4_comparision.png)
 
