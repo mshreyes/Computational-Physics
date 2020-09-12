@@ -8,14 +8,14 @@ For a given differential equation along with an initial condition,
 we can write the recussion equation as,
 <p align="center"><img src="/DEQ/EUM/tex/c586f9728dbf09571df281187035e279.svg?invert_in_darkmode&sanitize=true" align=middle width=153.4970448pt height=16.438356pt/></p>
 
-where <img src="/DEQ/EUM/tex/2ad9d098b937e46f9f58968551adac57.svg?invert_in_darkmode&sanitize=true" align=middle width=9.47111549999999pt height=22.831056599999986pt/> is the step size or small interval defined as,
+where _h_ is the step size or small interval defined as,
 <p align="center"><img src="/DEQ/EUM/tex/3b5d068f9cbd98226faf7e1c9a02318e.svg?invert_in_darkmode&sanitize=true" align=middle width=217.1358354pt height=17.74618065pt/></p>
 
-##### Example
+#### Example
 Given differential equation and corresponding initial condition are 
 <p align="center"><img src="/DEQ/EUM/tex/81c3242907286b19801e96f9c0484ff0.svg?invert_in_darkmode&sanitize=true" align=middle width=217.65536924999998pt height=33.81208709999999pt/></p>
 
-##### Analytical solution
+#### Analytical solution
 
 Rearranging above equation
 <p align="center"><img src="/DEQ/EUM/tex/9425c8cf313e2892186a0901e6389fa5.svg?invert_in_darkmode&sanitize=true" align=middle width=87.6194055pt height=37.0084374pt/></p> 
