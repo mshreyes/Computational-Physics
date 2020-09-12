@@ -47,8 +47,8 @@ we can write the recussion equation as,
 
 where 
 <p align="center"><img src="/DEQ/RKM/tex/bcbc63e759f8bd6e493188c1233c0f24.svg?invert_in_darkmode&sanitize=true" align=middle width=97.68075735pt height=16.438356pt/></p>
-<p align="center"><img src="/DEQ/RKM/tex/b5035f05dbcaf347f41ad144fdf5abf7.svg?invert_in_darkmode&sanitize=true" align=middle width=178.2049269pt height=33.81208709999999pt/></p>
-<p align="center"><img src="/DEQ/RKM/tex/0af32fd340829a352e67320e5ced20cf.svg?invert_in_darkmode&sanitize=true" align=middle width=178.2049269pt height=33.81208709999999pt/></p>
+<p align="center"><img src="/DEQ/RKM/tex/74f2201adb343c374815ee9b12a25573.svg?invert_in_darkmode&sanitize=true" align=middle width=182.1501pt height=33.81208709999999pt/></p>
+<p align="center"><img src="/DEQ/RKM/tex/f9785f5da4f6e868b926131bc4c031b9.svg?invert_in_darkmode&sanitize=true" align=middle width=182.1501pt height=33.81208709999999pt/></p>
 <p align="center"><img src="/DEQ/RKM/tex/96ab6f263b32059420f30c5d9472e95e.svg?invert_in_darkmode&sanitize=true" align=middle width=174.25975379999997pt height=16.438356pt/></p>
 
 and <img src="/DEQ/RKM/tex/2ad9d098b937e46f9f58968551adac57.svg?invert_in_darkmode&sanitize=true" align=middle width=9.47111549999999pt height=22.831056599999986pt/> is the step size or small interval defined as,
