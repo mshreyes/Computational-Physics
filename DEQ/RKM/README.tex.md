@@ -18,12 +18,12 @@ S_1 = f(x_i, y_i)  $$
 $$
 S_2  = f(x_i + h, y_i + h f(x_i, y_i))\\
 $$
-and $h$ is the step size or small interval defined as,
+and _h_ is the step size or small interval defined as,
 $$
     h = x_{i+1} - x_i \quad \text{where} \quad i \ \epsilon \ \mathbb{Z^+} 
 $$
 
-##### Example
+#### Example
 Given differential equation and corresponding initial condition are 
 $$
 \frac{dy}{dx} = 2xy \ ; \qquad y(x=0) = 0.5 \\
@@ -78,7 +78,7 @@ $$
     h = x_{i+1} - x_i \quad \text{where} \quad i \ \epsilon \ \mathbb{Z^+} 
 $$
 
-##### Example 
+#### Example 
 For the same example above, using RK4M we obtain,
 
 ![Solution for step size h = 0.1 and anlytical solution](rkm41.png)

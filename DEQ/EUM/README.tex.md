@@ -12,18 +12,18 @@ $$
 y_{i+1} = y_i + h f(x_i, y_i)
 $$
 
-where $h$ is the step size or small interval defined as,
+where _h_ is the step size or small interval defined as,
 $$
     h = x_{i+1} - x_i \quad \text{where} \quad i \ \epsilon \ \mathbb{Z^+} 
 $$
 
-##### Example
+#### Example
 Given differential equation and corresponding initial condition are 
 $$
 \frac{dy}{dx} = 2xy \ ; \qquad y(x=0) = 0.5 \\
 $$
 
-##### Analytical solution
+#### Analytical solution
 
 Rearranging above equation
 $$
