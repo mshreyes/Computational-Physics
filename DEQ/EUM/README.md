@@ -32,8 +32,7 @@ Simplifying and using given initial condition, we get,
 
 ![Solution for step size h = 0.01](euler2.png)
 
+![Comparision of analytical solution and solutions obtained by Euler's method](euler_comparision.png)
+
 
 **Note**: The graphical representation of solutions obtained using Euler's method have been restricted to the interval <img src="/DEQ/EUM/tex/acf5ce819219b95070be2dbeb8a671e9.svg?invert_in_darkmode&sanitize=true" align=middle width=32.87674994999999pt height=24.65753399999998pt/>
-
-
-![Comparision of analytical solution and solutions obtained by Euler's method](euler_comparision.png)
