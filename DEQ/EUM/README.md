@@ -3,44 +3,28 @@
 #### Recursion formula for Euler's method 
 
 For a given differential equation along with an initial condition,
-\[
-\frac{dy}{dx} = f(x,y) \ ; \qquad y(x=x_0) = y_0 \\
-\]
+<p align="center"><img src="/DEQ/EUM/tex/054908681de2467556fc61948104977c.svg?invert_in_darkmode&sanitize=true" align=middle width=241.50246284999997pt height=33.81208709999999pt/></p>
 
 we can write the recussion equation as,
-\[
-y_{i+1} = y_i + h f(x_i, y_i)
-\]
+<p align="center"><img src="/DEQ/EUM/tex/c586f9728dbf09571df281187035e279.svg?invert_in_darkmode&sanitize=true" align=middle width=153.4970448pt height=16.438356pt/></p>
 
 where <img src="/DEQ/EUM/tex/2ad9d098b937e46f9f58968551adac57.svg?invert_in_darkmode&sanitize=true" align=middle width=9.47111549999999pt height=22.831056599999986pt/> is the step size or small interval defined as,
-\[
-    h = x_{i+1} - x_i \quad \text{where} \quad i \ \epsilon \ \mathbb{Z^+} 
-\]
+<p align="center"><img src="/DEQ/EUM/tex/3b5d068f9cbd98226faf7e1c9a02318e.svg?invert_in_darkmode&sanitize=true" align=middle width=217.1358354pt height=17.74618065pt/></p>
 
 ##### Example
 Given differential equation and corresponding initial condition are 
-\[
-\frac{dy}{dx} = 2xy \ ; \qquad y(x=0) = 0.5 \\
-\]
+<p align="center"><img src="/DEQ/EUM/tex/81c3242907286b19801e96f9c0484ff0.svg?invert_in_darkmode&sanitize=true" align=middle width=217.65536924999998pt height=33.81208709999999pt/></p>
 
 ##### Analytical solution
 
 Rearranging above equation
-\[
-\frac{dy}{y} \ = \ 2x{dx} \\
-\] 
+<p align="center"><img src="/DEQ/EUM/tex/9425c8cf313e2892186a0901e6389fa5.svg?invert_in_darkmode&sanitize=true" align=middle width=87.6194055pt height=37.0084374pt/></p> 
 Now, integrating on both sides we get,
-\[
-\int \frac{dy}{y} \ = \ \int 2x{dx} 
-\] 
+<p align="center"><img src="/DEQ/EUM/tex/91678741fe654c9ce87fafac692480fd.svg?invert_in_darkmode&sanitize=true" align=middle width=127.94808509999999pt height=37.0084374pt/></p> 
 
-\[
-    \ln{y} \ = \ x^2 + C
-\]
+<p align="center"><img src="/DEQ/EUM/tex/e96d89a99aafe81b4deaf2b6c4fb503c.svg?invert_in_darkmode&sanitize=true" align=middle width=107.74933784999999pt height=17.399144399999997pt/></p>
 Simplifying and using given initial condition, we get,
-\[
-y(x) \ = \ \frac{1}{2} \exp(x^2) \\
-\]
+<p align="center"><img src="/DEQ/EUM/tex/3cc3f3e52689e0786a120f012a7264b1.svg?invert_in_darkmode&sanitize=true" align=middle width=133.27930439999997pt height=32.990165999999995pt/></p>
 
 ![Analytical Solution](analytical.png)
 

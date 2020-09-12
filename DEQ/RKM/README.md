@@ -4,35 +4,22 @@
 #### Recursion formula for RK2M
 
 For a given differential equation along with an initial condition,
-\[
-\frac{dy}{dx} = f(x,y) \ ; \qquad y(x=x_0) = y_0 \\
-\]
+<p align="center"><img src="/DEQ/RKM/tex/054908681de2467556fc61948104977c.svg?invert_in_darkmode&sanitize=true" align=middle width=241.50246284999997pt height=33.81208709999999pt/></p>
 
 we can write the recussion equation as,
-\[
-y_{i+1} = y_i + \frac{h}{2} (S_1 + S_2)
-\]
+<p align="center"><img src="/DEQ/RKM/tex/ce4da55fc720cbad77b18da95c1dffa0.svg?invert_in_darkmode&sanitize=true" align=middle width=166.9188708pt height=33.81208709999999pt/></p>
 where 
-\[
-S_1 = f(x_i, y_i)  \] 
-\[
-S_2  = f(x_i + h, y_i + h f(x_i, y_i))\\
-\]
+<p align="center"><img src="/DEQ/RKM/tex/0afe3f5efbf90cb9a77d2b669fbc5f55.svg?invert_in_darkmode&sanitize=true" align=middle width=97.68075735pt height=16.438356pt/></p> 
+<p align="center"><img src="/DEQ/RKM/tex/05cf2f150ee29d1b49b11fddd1410ce2.svg?invert_in_darkmode&sanitize=true" align=middle width=215.11411019999997pt height=16.438356pt/></p>
 and <img src="/DEQ/RKM/tex/2ad9d098b937e46f9f58968551adac57.svg?invert_in_darkmode&sanitize=true" align=middle width=9.47111549999999pt height=22.831056599999986pt/> is the step size or small interval defined as,
-\[
-    h = x_{i+1} - x_i \quad \text{where} \quad i \ \epsilon \ \mathbb{Z^+} 
-\]
+<p align="center"><img src="/DEQ/RKM/tex/3b5d068f9cbd98226faf7e1c9a02318e.svg?invert_in_darkmode&sanitize=true" align=middle width=217.1358354pt height=17.74618065pt/></p>
 
 ##### Example
 Given differential equation and corresponding initial condition are 
-\[
-\frac{dy}{dx} = 2xy \ ; \qquad y(x=0) = 0.5 \\
-\]
+<p align="center"><img src="/DEQ/RKM/tex/81c3242907286b19801e96f9c0484ff0.svg?invert_in_darkmode&sanitize=true" align=middle width=217.65536924999998pt height=33.81208709999999pt/></p>
 
 Above differential equation has the following solution
-\[
-y(x) \ = \ \frac{1}{2} \exp(x^2) \\
-\]
+<p align="center"><img src="/DEQ/RKM/tex/3cc3f3e52689e0786a120f012a7264b1.svg?invert_in_darkmode&sanitize=true" align=middle width=133.27930439999997pt height=32.990165999999995pt/></p>
 
 ![Analytical Solution](analytical.png)
 
@@ -53,30 +40,19 @@ y(x) \ = \ \frac{1}{2} \exp(x^2) \\
 #### Recursion formula for RK4M
 
 For a given differential equation along with an initial condition,
-\[
-\frac{dy}{dx} = f(x,y) \ ; \qquad y(x=x_0) = y_0 
-\]
+<p align="center"><img src="/DEQ/RKM/tex/59fe0e93f16ee5561686b0b60bd218ee.svg?invert_in_darkmode&sanitize=true" align=middle width=241.50246284999997pt height=33.81208709999999pt/></p>
 
 we can write the recussion equation as,
-\[
-y_{i+1} = y_i + \frac{h}{6} (S_1 + 2 S_2 + 2 S_3 + S4)
-\]
+<p align="center"><img src="/DEQ/RKM/tex/7dd6cfb61f6b7782273dac807ecb77e5.svg?invert_in_darkmode&sanitize=true" align=middle width=260.24064825pt height=33.81208709999999pt/></p>
 
 where 
-\[
-S_1 = f(x_i, y_i) \]
-\[
-S_2  = f(x_i + h, y_i + \frac{h}{2} S_1)\]
-\[
-S_3 =  f(x_i + h, y_i + \frac{h}{2} S_2) \]
-\[
-S_4 =  f(x_i + h, y_i + h S_3)
-\]
+<p align="center"><img src="/DEQ/RKM/tex/bcbc63e759f8bd6e493188c1233c0f24.svg?invert_in_darkmode&sanitize=true" align=middle width=97.68075735pt height=16.438356pt/></p>
+<p align="center"><img src="/DEQ/RKM/tex/b5035f05dbcaf347f41ad144fdf5abf7.svg?invert_in_darkmode&sanitize=true" align=middle width=178.2049269pt height=33.81208709999999pt/></p>
+<p align="center"><img src="/DEQ/RKM/tex/0af32fd340829a352e67320e5ced20cf.svg?invert_in_darkmode&sanitize=true" align=middle width=178.2049269pt height=33.81208709999999pt/></p>
+<p align="center"><img src="/DEQ/RKM/tex/96ab6f263b32059420f30c5d9472e95e.svg?invert_in_darkmode&sanitize=true" align=middle width=174.25975379999997pt height=16.438356pt/></p>
 
 and <img src="/DEQ/RKM/tex/2ad9d098b937e46f9f58968551adac57.svg?invert_in_darkmode&sanitize=true" align=middle width=9.47111549999999pt height=22.831056599999986pt/> is the step size or small interval defined as,
-\[
-    h = x_{i+1} - x_i \quad \text{where} \quad i \ \epsilon \ \mathbb{Z^+} 
-\]
+<p align="center"><img src="/DEQ/RKM/tex/3b5d068f9cbd98226faf7e1c9a02318e.svg?invert_in_darkmode&sanitize=true" align=middle width=217.1358354pt height=17.74618065pt/></p>
 
 ##### Example 
 For the same example above, using RK4M we obtain,
