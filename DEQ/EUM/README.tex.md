@@ -12,7 +12,7 @@ $$
 y_{i+1} = y_i + h f(x_i, y_i)
 $$
 
-where _h_ is the step size or small interval defined as,
+where $h$ is the step size or small interval defined as,
 $$
     h = x_{i+1} - x_i \quad \text{where} \quad i \ \epsilon \ \mathbb{Z^+} 
 $$
