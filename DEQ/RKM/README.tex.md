@@ -66,9 +66,9 @@ where
 $$
 S_1 = f(x_i, y_i) $$
 $$
-S_2  = f(x_i + h, y_i + \frac{h}{2} S_1)$$
+S_2  = f(x_i + \frac{h}{2}, y_i + \frac{h}{2} S_1)$$
 $$
-S_3 =  f(x_i + h, y_i + \frac{h}{2} S_2) $$
+S_3 =  f(x_i + \frac{h}{2}, y_i + \frac{h}{2} S_2) $$
 $$
 S_4 =  f(x_i + h, y_i + h S_3)
 $$
