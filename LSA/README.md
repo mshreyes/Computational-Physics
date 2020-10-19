@@ -35,11 +35,12 @@ For <!-- $\sigma = 10, \rho = 28, \beta = 8/3$ --> <img src="https://render.gith
 ![Plot of x vs t](LEc.png)
 ![Plot of y vs t](LEd.png)
 Data file for above plots can be found [here](/LSA/plots/leqn1.dat)
+Fortran [source file](/LSA/lorenz1.f95)
 
 ### Scripts and Plots
 Plots and Gnuplot scripts can be found [*here*](/LSA/plots)
 
-A thorough analysis (without Bifurcation analysis) can be found [*here*](Lorenz_analysis.pdf)
+A thorough analysis of these equations can be read [*here*](Lorenz_analysis.pdf)
 
 All the plots for above analysis are compiled [*here*](Lorenz_plots.pdf)
 
