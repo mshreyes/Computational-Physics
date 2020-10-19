@@ -35,7 +35,8 @@ For <!-- $\sigma = 10, \rho = 28, \beta = 8/3$ --> <img src="https://render.gith
 ![Plot of x vs t](LEc.png)
 ![Plot of y vs t](LEd.png)
 Data file for above plots can be found [here](/LSA/plots/leqn1.dat)
-Fortran [source file](/LSA/lorenz1.f95)
+Fortran code (using Euler's method)  [source file](/LSA/lorenz1.f95)
+Fortran code (using Runge-Kutta 4th order method)  [source file](/LSA/lorenz2.f95)
 
 ### Scripts and Plots
 Plots and Gnuplot scripts can be found [*here*](/LSA/plots)
