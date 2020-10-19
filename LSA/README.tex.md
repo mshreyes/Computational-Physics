@@ -20,6 +20,7 @@ Read more about physical interpretations of these equation on [Wikipedia](https:
 
 ## Summary 
 Following results are true assuming $\sigma, \beta > 0$
+
 - **Fixed points**:
 $$ 
 				\begin{aligned}
