@@ -75,6 +75,7 @@ $$
 $$
 ## Numerical Analysis
 For $\sigma = 10, \rho = 28, \beta = 8/3$, we get the following solution, using Euler's method (h=0.01),
+
 ![Plot of z vs x](LEa.png)
 ![Plot of z vs y](LEb.png)
 ![Plot of x vs t](LEc.png)
