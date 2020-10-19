@@ -4,11 +4,11 @@
 
  _All programs are written in **Fortran 90/95**_.
 
- ### 1. Methods of Solving Differential Equations ([DEQ](\DEQ)):
+ ### 1. Methods of Solving Differential Equations ([DEQ](DEQ)):
  - Euler's method 
  - Runge-Kutta 2nd order method
  - Runge-Kutta 4th order method
 
- ### 2. Analysis of Lorenz Equations ([LSA](\LSA))
+ ### 2. Analysis of Lorenz Equations ([LSA](LSA))
  - Stability analysis of fixed points
  - Numerical solution
