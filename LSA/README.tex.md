@@ -87,3 +87,4 @@ Plots and Gnuplot scripts can be found [*here*](/LSA/plots)
 A thorough analysis (without Bifurcation analysis) can be found [*here*](Lorenz_analysis.pdf)
 
 All the plots for above analysis are compiled [*here*](Lorenz_plots.pdf)
+
