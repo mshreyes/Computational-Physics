@@ -1,6 +1,5 @@
 !Title: To find the solutions for Lorenz euqations using Euler's method
-!PRN: 2019P042
-!Name: Shreyes Madgaonkar
+
 
 program LORENZ
 implicit none
