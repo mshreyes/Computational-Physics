@@ -74,6 +74,8 @@ $$
 				\text{unstable fixed points if},& \quad  \rho > \rho_0  \ \text{or} \ \ \rho < 1 \ \text{or} \ \ \sigma < \beta+1
 			\end{aligned}
 $$
+
+
 ## Numerical Analysis
 For $\sigma = 10, \rho = 28, \beta = 8/3$, we get the following solution, using Euler's method (h=0.01),
 
