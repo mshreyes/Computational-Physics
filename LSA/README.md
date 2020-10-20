@@ -27,7 +27,7 @@ Read more about physical interpretations of these equation on [Wikipedia](https:
 
 
 
-### Numerical Analysis
+### Numerical Solution(s)
 For <!-- $\sigma = 10, \rho = 28, \beta = 8/3$ --> <img src="https://render.githubusercontent.com/render/math?math=%5Csigma%20%3D%2010%2C%20%5Crho%20%3D%2028%2C%20%5Cbeta%20%3D%208%2F3">, we get the following solution, using Euler's method (h=0.01),
 
 ![Plot of z vs x](LEa.png)
@@ -49,7 +49,9 @@ A thorough analysis of these equations can be read [*here*](Lorenz_analysis.pdf)
 All the plots for above analysis are compiled [*here*](Lorenz_plots.pdf)
 
 ### References: 
+
 - Strogatz, Steven H. Nonlinear Dynamics and Chaos : With Applications to Physics, Biology, Chemistry, and Engineering. Boca Raton, Crc Press, 2019.
+
 ‌- Mccann, Caitlin. Bifurcation Analysis of Non-Linear Differential Equations. 2012.
 
 ‌
