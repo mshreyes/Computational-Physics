@@ -1,5 +1,6 @@
  
-# Lorenz Equations
+# Stability Analysis of Lorenz Equations
+### Introduction:
 
 The dynamics of a Lorenz system is described by the following differential equations, 
 
@@ -27,7 +28,7 @@ Read more about physical interpretations of these equation on [Wikipedia](https:
 
 
 
-### Numerical Solution(s)
+### Numerical Solution(s):
 For <!-- $\sigma = 10, \rho = 28, \beta = 8/3$ --> <img src="https://render.githubusercontent.com/render/math?math=%5Csigma%20%3D%2010%2C%20%5Crho%20%3D%2028%2C%20%5Cbeta%20%3D%208%2F3">, we get the following solution, using Euler's method (h=0.01),
 
 ![Plot of z vs x](LEa.png)
@@ -35,13 +36,13 @@ For <!-- $\sigma = 10, \rho = 28, \beta = 8/3$ --> <img src="https://render.gith
 ![Plot of x vs t](LEc.png)
 ![Plot of y vs t](LEd.png)
 
-Data file for above plots can be found [here](/LSA/plots/leqn1.dat).
+- Data file for above plots can be found [here](/LSA/plots/leqn1.dat).
 
-Fortran code (using Euler's method) - [source file](/LSA/lorenz1.f95).
+- Fortran code (*using Euler's method*) - [source file](/LSA/lorenz1.f95).
 
-Fortran code (using Runge-Kutta 4th order method) - [source file](/LSA/lorenz2.f95).
+- Fortran code (*using Runge-Kutta 4th order method*) - [source file](/LSA/lorenz2.f95).
 
-### Scripts and Plots
+### Scripts and Plots:
 Plots and Gnuplot scripts can be found [*here*](/LSA/plots)
 
 A thorough analysis of these equations can be read [*here*](Lorenz_analysis.pdf)
