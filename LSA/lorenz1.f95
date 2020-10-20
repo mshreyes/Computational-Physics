@@ -1,4 +1,4 @@
-!Title: To find the solutions for Lorenz euqations using Euler's method
+!Title: To find the solutions for Lorenz equations using Euler's method
 
 
 program LORENZ

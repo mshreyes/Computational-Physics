@@ -48,3 +48,8 @@ A thorough analysis of these equations can be read [*here*](Lorenz_analysis.pdf)
 
 All the plots for above analysis are compiled [*here*](Lorenz_plots.pdf)
 
+### References: 
+- Strogatz, Steven H. Nonlinear Dynamics and Chaos : With Applications to Physics, Biology, Chemistry, and Engineering. Boca Raton, Crc Press, 2019.
+‌- Mccann, Caitlin. Bifurcation Analysis of Non-Linear Differential Equations. 2012.
+
+‌
