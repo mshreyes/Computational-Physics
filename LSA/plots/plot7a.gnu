@@ -1,4 +1,4 @@
-set title "Plot of x versus t (sigma = 10, beta = 5, rho = 32)"
+set title "Plot of x versus t (sigma = 10, beta = 2, rho = 10)"
 set autoscale
 set grid
 set xlabel 'time (t)'
