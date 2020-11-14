@@ -1,2 +1,9 @@
+# extensions
 *.exe
 *.svg
+
+# directories
+Trial
+
+#files
+tout.txt
