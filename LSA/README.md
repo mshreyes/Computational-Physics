@@ -1,5 +1,8 @@
  
 # Stability Analysis of Lorenz Equations
+
+---
+
 ### Introduction:
 
 The dynamics of a Lorenz system is described by the following differential equations, 
