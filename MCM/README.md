@@ -22,6 +22,23 @@
 
 2. **Gambler's Ruin problem** (WIP)
 
-3. **2D random walk** ([code](/MCM/Rdwalk.f95)) 
-    ![plot](/MCM/plots/Rdwalk2D.png)
+3. **2D random walk** ([code](/MCM/Rdwalk.f95)) ([plot](/MCM/plots/Rdwalk2D.png))
 
+---
+
+##### Note:
+
+- **RAND()** implements *a simple modulo generator* (or what's called a linear congruential pseudorandom number generator (PRNG))and unless one is working with legacy code (f77) it is advisible to use a different PRNG implementation. The reason being higher auto-correlation and a short period. ( see [documentation](https://gcc.gnu.org/onlinedocs/gfortran/RAND.html))
+
+- Instead it is advisable to use **RANDOM_NUMBER()** subroutine which implements *xoshiro256\*\* PRNG*. (see [documentation](https://gcc.gnu.org/onlinedocs/gfortran/RANDOM_005fNUMBER.html#RANDOM_005fNUMBER)). 
+
+- Summary:
+
+    ```fortran
+    ! If you are working with FORTRAN 77 (legacy code) use:
+    r = rand()
+
+    ! If you are working with FORTRAN 90/95/03 use:
+    call random_number(r)
+    ```
+  
