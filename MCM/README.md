@@ -63,11 +63,11 @@
 
 - **RAND()** implements *a simple modulo generator* (or what's called a linear congruential pseudorandom number generator (PRNG))and unless one is working with legacy code (f77) it is advisible to use a different PRNG implementation. The reason being higher auto-correlation and a short period. ( see [documentation](https://gcc.gnu.org/onlinedocs/gfortran/RAND.html))
 
-- Instead it is advisable to use **RANDOM_NUMBER()** subroutine which implements *xoshiro256\*\* PRNG*. (see [documentation](https://gcc.gnu.org/onlinedocs/gfortran/RANDOM_005fNUMBER.html#RANDOM_005fNUMBER)). 
+- Instead it is advisable to use **RANDOM_NUMBER** subroutine which implements *xoshiro256\*\* PRNG*. (see [documentation](https://gcc.gnu.org/onlinedocs/gfortran/RANDOM_005fNUMBER.html#RANDOM_005fNUMBER)). 
 
 - Summary:
 
-    ```fortran
+    ```
     ! If you are working with FORTRAN 77 (legacy code) use:
     r = rand()
 
