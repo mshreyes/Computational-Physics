@@ -20,7 +20,40 @@
 
         <div align="center"><img src="..\svg\7aK4vE6DpA.svg"/></div>
 
-2. **Gambler's Ruin problem** (WIP)
+2. **Gambler's Ruin problem** ([code](/MCM/gambler.f95)) 
+
+    Consider a gambler, say A, playing with an initial capital of i (in some unit of currency) and with a total capital N on the table. A random event such as a coin toss will decide whether A wins or not. If A wins, i increases by one and if he loses, i is reduced by 1. The game ends when either A loses all of his money i.e. i = 0 or wins enough rounds so that i = N. 
+
+
+    If p is the probability that A wins a round, then the probability that A wins the whole game (i = N) is given by following distribution,
+    <!-- $$
+    P(i) =	\frac{1 - (\frac{q}{p})^i}{1 - (\frac{q}{p})^N}, \quad \text{if } p \neq 0.5
+    $$ --> 
+
+    <div align="center"><img src="..\svg\UxRS14YQZF.svg"/></div>
+    and
+    <!-- $$
+    P(i) =	\frac{i}{N}, \quad \text{if } p = 0.5
+    $$ --> 
+
+    <div align="center"><img src="..\svg\ksGhNOnTi1.svg"/></div> 
+    where q = 1 - p
+
+    Analytical solution i.e. probability distribution obtained analytical (using above formula) can be found [here](\plots\plotb.pdf)
+    
+
+    Numerically, as in this code, 
+    <!-- $$
+    P(i) = \frac{\text{Number of games won}}{\text{Number of games played}} = \frac{n_{wins}}{n_{games}}
+    $$ --> 
+
+    <div align="center"><img src="..\svg\k0xiWmA3iv.svg"/></div> 
+
+
+    Analytical solution i.e. probability distribution obtained analytical (using above formula) can be found [here](\plots\plota.pdf).
+
+    A comparison between both the methods is [here](\plots\plotc.pdf)
+
 
 3. **2D random walk** ([code](/MCM/Rdwalk.f95)) ([plot](/MCM/plots/Rdwalk2D.png))
 
