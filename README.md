@@ -17,5 +17,5 @@
 
  ### 3. Monte Carlo Methods ([MCM](MCM))
  - Monte Carlo integration method
- - Gambler's ruin problem (WIP)
+ - Gambler's ruin problem 
  - 2D Random Walk
