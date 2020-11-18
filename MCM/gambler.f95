@@ -1,7 +1,4 @@
 ! Title: Gambler's ruin problem
-! Name: Shreyes Madgaonkar
-! PRN: 2019P042
-! N19021045
 
 program Gamblers_ruin
 implicit none
