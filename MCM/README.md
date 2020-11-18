@@ -20,7 +20,7 @@
 
         <div align="center"><img src="..\svg\7aK4vE6DpA.svg"/></div>
 
-2. **Gambler's Ruin problem** ([code](/MCM/gambler.f95)) 
+2. **Gambler's Ruin problem** ([code](/MCM/gambler.f95)) ([analysis](/MCM/gambler.pdf))  
 
     Consider a gambler, say A, playing with an initial capital of i (in some unit of currency) and with a total capital N on the table. A random event such as a coin toss will decide whether A wins or not. If A wins, i increases by one and if he loses, i is reduced by 1. The game ends when either A loses all of his money i.e. i = 0 or wins enough rounds so that i = N. 
 
@@ -39,7 +39,7 @@
 
         <div align="center"><img src="..\svg\ksGhNOnTi1.svg"/></div> 
 
-        Analytical solution i.e. probability distribution obtained analytically (using above formula) can be found [here](\plots\plotb.pdf)
+        Analytical solution i.e. probability distribution obtained analytically (using above formula) can be found [here](/MCM/plots/plotb.pdf)
     
 
     -  **Numerical solution**: 
@@ -50,9 +50,9 @@
         <div align="center"><img src="..\svg\k0xiWmA3iv.svg"/></div> 
 
 
-        Numerical solution i.e. probability distribution obtained numerically (using above formula) can be found [here](\plots\plota.pdf).
+        Numerical solution i.e. probability distribution obtained numerically (using above formula) can be found [here](/MCM/plots/plota.pdf).
 
-    - A comparison between both the methods is [here](\plots\plotc.pdf)
+    - A comparison between both the methods is [here](/MCM/plots/plotc.pdf)
 
 
 3. **2D random walk** ([code](/MCM/Rdwalk.f95)) ([plot](/MCM/plots/Rdwalk2D.png))
