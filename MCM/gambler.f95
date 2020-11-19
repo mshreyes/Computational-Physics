@@ -19,16 +19,23 @@ do J = 1, 9
     IC(J) = 2*J
 end do
 
+! parameters
 P = 0.4   ! probability that A wins one round
-Q = 0.6   ! probability that A loses one round
+Q = 1 - P  ! probability that A loses one round
 NC = 20     ! total capital 
 
 ! (Analytically obtained) Probability of A winning the game
-do I = 1, 9
-    PA(I) = (1.0 - (Q/P)**IC(I))/(1.0 - (Q/P)**NC)
-end do
+if (abs(p - 0.5) .ge. 10.0**(-6)) then      ! when p is not equatl to 0.5
+    do I = 1, 9
+        PA(I) = (1.0 - (Q/P)**IC(I))/(1.0 - (Q/P)**NC)
+    end do
+else if (abs(p - 0.5) .le. 10.0**(-6)) then     ! when p is equatl to 0.5
+    do I = 1, 9
+        PA(I) = real(IC(I))/real(NC)
+    end do
+end if
 
-! Number of games played (ensembles)
+! Number of games played (ensembles-like)
 GAMES = 20000
 
 
