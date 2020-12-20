@@ -1,6 +1,7 @@
-! TASEP (simulation using averaging over time)
+! Title: TASEP (MC simulation using averaging over time)
 
-program TASEP1
+program TASEP
+implicit none
 
 integer :: I, N, T, TW, N1, T1, S1, S2, T2, TS
 real :: R1, R2, R3, R4, R5, R6, R7, ALPHA, A, BETA, RHO_AVG, J_AVG
@@ -32,8 +33,8 @@ TS = 0
         J_TOTAL(I) = 0
     end do 
 
-! for generating an initial state by
-! flipping spins for half of the N states
+! To generating an initial state by
+! flipping spins of N/2 states
     N1 = int(N/2)
 
     do I = 1, N1
@@ -48,14 +49,14 @@ TS = 0
     end do  
 
 
-! Dynamics and recording samples
+! Dynamics & recording samples
     do 
         do I = 1, N
 
             call random_number(R2)
             S2 = int(N*R2 + 1)
 
-        ! for site i = 1 (first site)
+        ! dynamics of site i = 1 (first site)
             if (S2 == 1) then       
                 
                 if (RHO(1) == 0) then
@@ -91,7 +92,7 @@ TS = 0
                     J(1) = 0
                 end if 
             
-        ! for the site i = N  (Nth site)  
+        ! dynamics of the site i = N  (Nth site)  
             else if (S2 == N) then       
 
                 if (RHO(N) == 0) then
@@ -128,7 +129,7 @@ TS = 0
 
                 end if 
             
-        ! for any bulk site     
+        ! dynamics of any bulk site     
             else if (S2 > 1 .and. S2 < N) then
                 
                     if (RHO(S2) == 1) then
@@ -207,4 +208,4 @@ TS = 0
 deallocate(RHO, RHO_TOTAL, J, J_TOTAL)
 
 
-end program TASEP1
+end program TASEP
