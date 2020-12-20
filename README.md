@@ -19,3 +19,7 @@
  - Monte Carlo integration method
  - Gambler's ruin problem 
  - 2D Random Walk
+
+ ### 4. TASEP (WIP)
+
+ ### 5. Ising model (WIP)
