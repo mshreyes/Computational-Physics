@@ -1,4 +1,8 @@
+! **************************************************************************************
 ! Title: TASEP (MC simulation using averaging over time)
+! Name: Shreyes Madgaonkar
+! PRN: N19021045
+! **************************************************************************************
 
 program TASEP
 implicit none
@@ -20,7 +24,7 @@ allocate(J_TOTAL(N))
 
 
 T = 0
-TW = 1500
+TW = 3000
 T1 = 0
 T2 = 0
 TS = 0
@@ -33,8 +37,7 @@ TS = 0
         J_TOTAL(I) = 0
     end do 
 
-! To generating an initial state by
-! flipping spins of N/2 states
+! To generating an initial state by flipping spins of N/2 states
     N1 = int(N/2)
 
     do I = 1, N1
