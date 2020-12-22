@@ -20,6 +20,6 @@
  - Gambler's ruin problem 
  - 2D Random Walk
 
- ### 4. TASEP (WIP)
+ ### 4. TASEP ([TASEP](TASEP)) - Incomplete
 
- ### 5. Ising model (WIP)
+ ### 5. Ising model ([ISING](ISING)) - Incomplete
