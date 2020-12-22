@@ -12,7 +12,7 @@
     ![Average density](/TASEP/plots/plot2a.png)
     ![Average current](/TASEP/plots/plot2b.png) 
 
-1. Maximum current phase (MDP)
+3. Maximum current phase (MDP)
 
     ![Average density](/TASEP/plots/plot3a.png)
     ![Average current](/TASEP/plots/plot3b.png) 
