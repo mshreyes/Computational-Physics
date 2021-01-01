@@ -1,4 +1,4 @@
-!Title: To find the solutions for Lorenz euqations using Runge-Kutta 4th order method
+!Title: To find the solutions for Lorenz equations using Runge-Kutta 4th order method
 
 program LORENZ
 implicit none
