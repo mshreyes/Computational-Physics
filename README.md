@@ -2,7 +2,7 @@
 
 ---
 
- Numerical methods required to solve problems in physical sciences. Part of Computational Physics course. 
+ Part of Computational Physics course. 
 
  _All programs are written in **Fortran 90/95**_.
 
