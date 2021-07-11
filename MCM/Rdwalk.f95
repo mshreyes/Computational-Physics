@@ -1,50 +1,53 @@
-!Title: 2D Random walk simulation using Monte Carlo method
+! Title: 2D Random walk simulation using Monte Carlo method
+! Name: SHreyes Madgaonkar
+! PRN: N19021045
 
 program RDWALK1
 implicit none
     
-real, dimension(:), allocatable :: X, Y
-real :: A, B
-integer :: I, J
+real :: A, P
+integer :: I, J, N, K, M, S
 
-    J = 200000
-    allocate(X(J)) 
-    allocate(Y(J)) 
+    N = 10
     
-    X(1) = 0
-    Y(1) = 0
-
-    do I = 1, J-1
-        call random_number(A)
-        call random_number(B)
-        
-
-        if (A .lt. 0.5) then
-            X(I+1) = X(I) + 1
-        else 
-            X(I+1) = X(I) - 1
-        end if
-
-        if (B .lt. 0.5) then
-            Y(I+1) = Y(I) + 1
-        else 
-            Y(I+1) = Y(I) - 1
-        end if
-
-    end do
-
     open(unit=15, file='rdwalk1.dat')
-        
-        write(15,*) "#  Average of steps along X axis = ", SUM(X)/J
-        write(15,*) "#  Average of steps along Y axis = ", SUM(Y)/J
-        write(15,*) "#  X               Y    "
 
-        do I = 1, J
-            write(15,*) X(I), Y(I)
-        end do
+    S = 0 
+
+        do K = -10, 10
+        
+            do J = 1, 1000
+                
+                do I = 1, N
+
+                    call random_number(A)        
+
+                    if (A .lt. 0.5) then
+                        S = S + 1
+                    else 
+                        S = S - 1
+                    end if
+
+                end do
+
+                if (S == K) then 
+                    M = M + 1
+                    S = 0
+                else 
+                    S = 0
+                end if 
+
+                
+
+            end do 
+
+            P = real(M)/1000
+                
+            write(15,*) K, P
+            M = 0
+
+        end do 
 
     close(15) 
      
-    deallocate(X, Y)
-
 end program RDWALK1

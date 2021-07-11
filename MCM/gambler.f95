@@ -20,7 +20,7 @@ do J = 1, 9
 end do
 
 ! parameters
-P = 0.4   ! probability that A wins one round
+P = 0.5   ! probability that A wins one round
 Q = 1 - P  ! probability that A loses one round
 NC = 20     ! total capital 
 
@@ -39,10 +39,7 @@ end if
 GAMES = 20000
 
 
-do J = 1, 9
-
-    WIN = 0
-    LOSS = 0    
+do J = 1, 10    
 
     do I = 1, GAMES
         
@@ -59,15 +56,6 @@ do J = 1, 9
                 C = C - 1       ! A loses a round 
             end if 
 
-            if (C == NC) then 
-                WIN = WIN + 1       ! exit when A wins a game (i = N)       
-                exit
-            end if
-
-            if (C == 0) then 
-                LOSS = LOSS + 1     ! exits when A loses a game (i = 0) 
-                exit
-            end if
         end do
     end do
 

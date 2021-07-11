@@ -12,10 +12,10 @@ real :: R1, R2, R3, R4, R5, R6, R7, ALPHA, A, BETA, RHO_AVG, J_AVG
 integer, allocatable, dimension(:) :: RHO, J, RHO_TOTAL, J_TOTAL
 
 ! paramaters
-ALPHA = 0.9
+ALPHA = 0.2
 BETA = 0.8
 A = 1.0
-N = 1000
+N = 100
 
 allocate(RHO(N))
 allocate(RHO_TOTAL(N))
@@ -59,77 +59,72 @@ TS = 0
             call random_number(R2)
             S2 = int(N*R2 + 1)
 
-        ! dynamics of site i = 1 (first site)
-            if (S2 == 1) then       
+        ! dynamics of site i = N
+            if (S2 == N) then       
                 
-                if (RHO(1) == 0) then
+                if (RHO(N) == 0) then
 
                     call random_number(R3)
 
                     if (R3 .le. ALPHA) then
-                        RHO(1) = 1
-                        J(1) = 0
+                        RHO(N) = 1
+                        J(N) = 0
                     else 
-                        RHO(1) = 0
-                        J(1) = 0
+                        RHO(N) = 0
+                        J(N) = 0
                     end if 
 
-                else if (RHO(1) == 1) then
+                else if (RHO(N) == 1) then
 
-                    if (RHO(2) == 0) then
+                    if (RHO(N-1) == 0) then
                         call random_number(R4)
 
                         if (R4 .le. A) then
-                            RHO(2) = 1
-                            RHO(1) = 0
-                            J(1) = 1
-                            J(2) = 0
+                            RHO(N-1) = 1
+                            RHO(N) = 0
+                            J(N) = 1
+                            J(N-1) = 0
                         else 
-                            RHO(2) = 0
-                            RHO(1) = 1
-                            J(1) = 0
+                            RHO(N-1) = 0
+                            RHO(N) = 1
+                            J(N) = 0
                         end if 
                     end if 
 
-                else 
-                    J(1) = 0
+                
                 end if 
             
-        ! dynamics of the site i = N  (Nth site)  
-            else if (S2 == N) then       
+        ! dynamics of the site i = 1  
+            else if (S2 == 1) then       
 
-                if (RHO(N) == 0) then
+                if (RHO(1) == 0) then
                     
-                    if (RHO(N-1) == 1) then
+                    if (RHO(2) == 1) then
                         call random_number(R5)
 
                         if (R5 .le. A) then
-                            RHO(N) = 1
-                            RHO(N-1) = 0
-                            J(N) = 0
-                            J(N-1) = 1
+                            RHO(1) = 1
+                            RHO(2) = 0
+                            J(1) = 0
+                            J(2) = 1
                         else 
-                            J(N-1) = 0
+                            J(2) = 0
                         end if 
                     else 
-                        J(N-1) = 0
+                        J(2) = 0
                     end if
 
-                else if (RHO(N) == 1) then
+                else if (RHO(1) == 1) then
 
                     call random_number(R6)
 
                     if (R6 .le. BETA) then
-                        RHO(N) = 0
-                        J(N) = 0
+                        RHO(1) = 0
+                        J(1) = 0
                     else 
-                        J(N) = 0
+                        J(1) = 0
                     end if 
                 
-                else 
-
-                    J(S2) = 0
-
                 end if 
             
         ! dynamics of any bulk site     
@@ -137,17 +132,17 @@ TS = 0
                 
                     if (RHO(S2) == 1) then
 
-                        if (RHO(S2 + 1) == 0) then
+                        if (RHO(S2 - 1) == 0) then
                             call random_number(R7)
 
                             if (R7 .le. A) then
-                                RHO(S2 + 1) = 1
+                                RHO(S2 - 1) = 1
                                 RHO(S2) = 0
                                 J(S2) = 1
-                                J(S2 + 1) = 0
+                                J(S2 - 1) = 0
                             else 
                                 J(S2) = 0
-                                J(S2 + 1) = 0
+                                J(S2 - 1) = 0
                             end if  
 
                         end if
