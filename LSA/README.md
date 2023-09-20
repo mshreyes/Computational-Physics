@@ -7,32 +7,17 @@
 
 The dynamics of a Lorenz system is described by the following differential equations, 
 
-<!-- $$
-\dot{x} \ = \ \sigma (y - x) 
-$$ --> 
-
-<div align="center"><img src="https://render.githubusercontent.com/render/math?math=%5Cdot%7Bx%7D%20%5C%20%3D%20%5C%20%5Csigma%20(y%20-%20x)%20%0D"></div>
-	
-<!-- $$
-\dot{y} \ = \ x(\rho - z) - y 
-$$ --> 
-
-<div align="center"><img src="https://render.githubusercontent.com/render/math?math=%5Cdot%7By%7D%20%5C%20%3D%20%5C%20x(%5Crho%20-%20z)%20-%20y%20%0D"></div>
-	
-<!-- $$
-\dot{z} \ = \ xy - \beta z
-$$ --> 
-
-<div align="center"><img src="https://render.githubusercontent.com/render/math?math=%5Cdot%7Bz%7D%20%5C%20%3D%20%5C%20xy%20-%20%5Cbeta%20z%0D"></div>
-	where <!-- $\sigma, \rho, \beta \ \epsilon \ \mathbb{R}$ --> <img src="https://render.githubusercontent.com/render/math?math=%5Csigma%2C%20%5Crho%2C%20%5Cbeta%20%5C%20%5Cepsilon%20%5C%20%5Cmathbb%7BR%7D">
-
+$$\dot{x} \ = \ \sigma (y - x)$$
+$$\dot{y} \ = \ x(\rho - z) - y $$
+$$\dot{z} \ = \ xy - \beta z$$
+where $\sigma, \rho, \beta  \ \epsilon \ \mathbb{R}$
 
 Read more about physical interpretations of these equation on [Wikipedia](https://en.wikipedia.org/wiki/Lorenz_system)
 
 
 
 ### Numerical Solution(s):
-For <!-- $\sigma = 10, \rho = 28, \beta = 8/3$ --> <img src="https://render.githubusercontent.com/render/math?math=%5Csigma%20%3D%2010%2C%20%5Crho%20%3D%2028%2C%20%5Cbeta%20%3D%208%2F3">, we get the following solution, using Euler's method (h=0.01),
+For $\sigma = 10, \rho = 28, \beta = 8/3$, we get the following solution, using Euler's method (h=0.01),
 
 ![Plot of z vs x](LEa.png)
 ![Plot of z vs y](LEb.png)

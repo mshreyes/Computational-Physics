@@ -6,19 +6,12 @@
     In the provided example, we find the area of an ellipse using MC integration. We make use of the simple fact that area of ellipse is four times the area in first quadrant.
 
     - *Approach 1*: Hit-and-Pass MCM ([code](/MCM/integral.f95))
-        <!-- $$ 
-        \int_{a}^{b} f(x) \ dx = \frac{N_s}{N} f_m(x) (b-a) 
-        $$ --> 
 
-        <div align="center"><img src="..\svg\CqpsQxX088.svg"/></div>
+        $$ \int_a^b f(x) dx  = \frac{N_s}{N}f_m(x)(b-a)$$
 
     - *Approach 2*: Averaging of function over N ([code](/MCM/integral2.f95))
 
-        <!-- $$
-        \int_{a}^{b} f(x) \ dx = (b-a) \frac{1}{N} \sum_{i=1}^N f(x_i) 
-        $$ --> 
-
-        <div align="center"><img src="..\svg\7aK4vE6DpA.svg"/></div>
+        $$ \int_a^b f(x) dx  = \frac{(b-a)}{N}\sum_{i=1}^Nf(x_i)$$
 
 2. **Gambler's Ruin problem** ([code](/MCM/gambler.f95)) ([analysis](/MCM/gambler.pdf))  
 
@@ -27,28 +20,19 @@
 
      If p is the probability that A wins a round, and q = 1 - p is the probability that A loses a round, then the probability that A wins the whole game (i = N) is given by following probability distribution functions:
 
-    - **Analytical solution**: 
-        <!-- $$
-        P(i) =	\frac{1 - (\frac{q}{p})^i}{1 - (\frac{q}{p})^N}, \quad \text{if } p \neq 0.5
-        $$ --> 
+    - **Analytical solution**:  
 
-        <div align="center"><img src="..\svg\UxRS14YQZF.svg"/></div>
-        <!-- $$
-        P(i) =	\frac{i}{N}, \quad \text{if } p = 0.5
-        $$ --> 
-
-        <div align="center"><img src="..\svg\ksGhNOnTi1.svg"/></div> 
+        $$P(i) = \frac{1 - (\frac{q}{p})^i}{1 - (\frac{q}{p})^N}, \quad \text{if } p \neq 0.5 $$
+        
+        $$P(i) = \frac{i}{N}, \quad \text{if } p = 0.5$$
 
         Analytical solution i.e. probability distribution obtained analytically (using above formula) can be found [here](/MCM/plots/plotb.pdf)
     
 
     -  **Numerical solution**: 
-        <!-- $$
-        P(i) = \frac{\text{Number of games won}}{\text{Number of games played}} = \frac{n_{wins}}{n_{games}}
-        $$ --> 
+ 
 
-        <div align="center"><img src="..\svg\k0xiWmA3iv.svg"/></div> 
-
+        $$P(i) = \frac{\text{Number of games won}}{\text{Number of games played}} = \frac{n_{wins}}{n_{games}}$$
 
         Numerical solution i.e. probability distribution obtained numerically (using above formula) can be found [here](/MCM/plots/plota.pdf).
 

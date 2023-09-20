@@ -4,22 +4,25 @@
 #### Recursion formula for RK2M
 
 For a given differential equation along with an initial condition,
-<p align="center"><img src="/DEQ/RKM/tex/054908681de2467556fc61948104977c.svg?invert_in_darkmode&sanitize=true" align=middle width=241.50246284999997pt height=33.81208709999999pt/></p>
+$$\frac{dy}{dx} = f(x,y) \ ; \qquad y(x=x_0) = y_0 $$
 
 we can write the recursion equation as,
-<p align="center"><img src="/DEQ/RKM/tex/ce4da55fc720cbad77b18da95c1dffa0.svg?invert_in_darkmode&sanitize=true" align=middle width=166.9188708pt height=33.81208709999999pt/></p>
+
+$$y_{i+1} = y_i + \frac{h}{2} (S_1 + S_2)$$
+
 where 
-<p align="center"><img src="/DEQ/RKM/tex/0afe3f5efbf90cb9a77d2b669fbc5f55.svg?invert_in_darkmode&sanitize=true" align=middle width=97.68075735pt height=16.438356pt/></p> 
-<p align="center"><img src="/DEQ/RKM/tex/05cf2f150ee29d1b49b11fddd1410ce2.svg?invert_in_darkmode&sanitize=true" align=middle width=215.11411019999997pt height=16.438356pt/></p>
+
+$$S_1 = f(x_i, y_i)  $$ 
+$$S_2  = f(x_i + h, y_i + h f(x_i, y_i))$$
 and h is the step size or small interval defined as,
-<p align="center"><img src="/DEQ/RKM/tex/3b5d068f9cbd98226faf7e1c9a02318e.svg?invert_in_darkmode&sanitize=true" align=middle width=217.1358354pt height=17.74618065pt/></p>
+$$h = x_{i+1} - x_i \quad \text{where} \quad i \ \epsilon \ \mathbb{Z^+}$$
 
 #### Example
 Given differential equation and corresponding initial condition are 
-<p align="center"><img src="/DEQ/RKM/tex/81c3242907286b19801e96f9c0484ff0.svg?invert_in_darkmode&sanitize=true" align=middle width=217.65536924999998pt height=33.81208709999999pt/></p>
+$$\frac{dy}{dx} = 2xy \ ; \qquad y(x=0) = 0.5 $$
 
 Above differential equation has the following solution
-<p align="center"><img src="/DEQ/RKM/tex/3cc3f3e52689e0786a120f012a7264b1.svg?invert_in_darkmode&sanitize=true" align=middle width=133.27930439999997pt height=32.990165999999995pt/></p>
+$$y(x) \ = \ \frac{1}{2} \exp(x^2)$$
 
 ![Analytical Solution](analytical.png)
 
@@ -32,7 +35,7 @@ Above differential equation has the following solution
 ![Solution for h = 0.01](rkm2.png)
 
 
-**Note**: The graphical representation of solutions obtained using RK2M have been restricted to the interval <img src="/DEQ/RKM/tex/acf5ce819219b95070be2dbeb8a671e9.svg?invert_in_darkmode&sanitize=true" align=middle width=32.87674994999999pt height=24.65753399999998pt/>
+**Note**: The graphical representation of solutions obtained using RK2M have been restricted to the interval $[0,1]$
 
 ---
 
@@ -40,19 +43,19 @@ Above differential equation has the following solution
 #### Recursion formula for RK4M
 
 For a given differential equation along with an initial condition,
-<p align="center"><img src="/DEQ/RKM/tex/59fe0e93f16ee5561686b0b60bd218ee.svg?invert_in_darkmode&sanitize=true" align=middle width=241.50246284999997pt height=33.81208709999999pt/></p>
+$$\frac{dy}{dx} = f(x,y) \ ; \qquad y(x=x_0) = y_0 $$
 
 we can write the recursion equation as,
-<p align="center"><img src="/DEQ/RKM/tex/7dd6cfb61f6b7782273dac807ecb77e5.svg?invert_in_darkmode&sanitize=true" align=middle width=260.24064825pt height=33.81208709999999pt/></p>
+$$y_{i+1} = y_i + \frac{h}{6} (S_1 + 2 S_2 + 2 S_3 + S4)$$
 
 where 
-<p align="center"><img src="/DEQ/RKM/tex/bcbc63e759f8bd6e493188c1233c0f24.svg?invert_in_darkmode&sanitize=true" align=middle width=97.68075735pt height=16.438356pt/></p>
-<p align="center"><img src="/DEQ/RKM/tex/74f2201adb343c374815ee9b12a25573.svg?invert_in_darkmode&sanitize=true" align=middle width=182.1501pt height=33.81208709999999pt/></p>
-<p align="center"><img src="/DEQ/RKM/tex/f9785f5da4f6e868b926131bc4c031b9.svg?invert_in_darkmode&sanitize=true" align=middle width=182.1501pt height=33.81208709999999pt/></p>
-<p align="center"><img src="/DEQ/RKM/tex/96ab6f263b32059420f30c5d9472e95e.svg?invert_in_darkmode&sanitize=true" align=middle width=174.25975379999997pt height=16.438356pt/></p>
+$$S_1 = f(x_i, y_i) $$
+$$S_2  = f(x_i + \frac{h}{2}, y_i + \frac{h}{2} S_1)$$
+$$S_3 =  f(x_i + \frac{h}{2}, y_i + \frac{h}{2} S_2) $$
+$$S_4 =  f(x_i + h, y_i + h S_3)$$
 
-and <img src="/DEQ/RKM/tex/2ad9d098b937e46f9f58968551adac57.svg?invert_in_darkmode&sanitize=true" align=middle width=9.47111549999999pt height=22.831056599999986pt/> is the step size or small interval defined as,
-<p align="center"><img src="/DEQ/RKM/tex/3b5d068f9cbd98226faf7e1c9a02318e.svg?invert_in_darkmode&sanitize=true" align=middle width=217.1358354pt height=17.74618065pt/></p>
+and $h$ is the step size or small interval defined as,
+$$h = x_{i+1} - x_i \quad \text{where} \quad i \ \epsilon \ \mathbb{Z^+} $$
 
 #### Example 
 For the same example above, using RK4M we obtain,
@@ -65,7 +68,7 @@ For the same example above, using RK4M we obtain,
 
 ![Solution for h = 0.01](rkm4.png)
 
-**Note**: The graphical representation of solutions obtained using RK4M have been restricted to the interval <img src="/DEQ/RKM/tex/acf5ce819219b95070be2dbeb8a671e9.svg?invert_in_darkmode&sanitize=true" align=middle width=32.87674994999999pt height=24.65753399999998pt/>
+**Note**: The graphical representation of solutions obtained using RK4M have been restricted to the interval $[0,1]$
 
 ---
 
@@ -80,4 +83,4 @@ For the same example above, using RK4M we obtain,
 ---
 
 ###### Additional note:
-The interval <img src="/DEQ/RKM/tex/acf5ce819219b95070be2dbeb8a671e9.svg?invert_in_darkmode&sanitize=true" align=middle width=32.87674994999999pt height=24.65753399999998pt/> is quite large to observe the difference between the analytical and the numerical solution. I've kept it that way because though by changing the graph parameters we can see the difference, the graph so obtained will look like a straight line and won't serve any purpose.
+The interval $[0,1]$ is quite large to observe the difference between the analytical and the numerical solution. I've kept it that way because though by changing the graph parameters we can see the difference, the graph so obtained will look like a straight line and won't serve any purpose.
